@@ -102,8 +102,7 @@ main{
 
 .items-list{
     border: 3px solid rgb(133, 132, 132);
-    min-height: 20%;
-    max-height: 40%;;
+    height: 40%;;
     width: 80%;
     margin: auto;
     box-shadow: 0 0 2px 0 black;
@@ -139,13 +138,14 @@ main{
 }
 
 .donate{
-    height: 45vh;
+    /* border: 1px solid red; */
+    height: 60vh;
     text-align: center;
     margin-top: 2rem;
 }
 .donate h3{
     font-size: 1.5rem;
-    margin-top: .5em;
+    margin-top: 2em;
 }
 form{
     display: flex;
@@ -179,11 +179,13 @@ form{
 }
 
 .about-us{
-    min-height: 40vh;
+    /* border: 5px solid green; */
+    min-height: 50vh;
     display: flex;
     gap: 1em;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
 }
 
 .about-us-text{
@@ -193,7 +195,7 @@ form{
 .about-us-text h3{
     text-align: center;
     font-size: 1.5rem;
-    margin: 1em 0;
+    /* margin: 1em 0; */
 }
 .about-us-text p{
     margin-right: .5em;
