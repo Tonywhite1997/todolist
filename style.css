@@ -84,7 +84,7 @@ input{
 main{
     width: 100%;
     /* border: 1px solid red; */
-    height: 90vh;
+    height: 130vh;
     text-align: center;
 }
 #item{
@@ -102,16 +102,39 @@ main{
 
 .items-list{
     border: 3px solid rgb(133, 132, 132);
-    min-height: 50%;
+    height: 50%;
     width: 80%;
     margin: auto;
     box-shadow: 0 0 2px 0 black;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.items-list h3{
-    margin-top: 1em;
+.items-list li{
+    list-style:decimal;
+    text-align: start;
+}
+
+.items-list-header{
+    margin-bottom: .5em;
+    font-size: 1.1rem;
+}
+
+#saveList{
+    margin: .5em;
+    width: 200px;
+    height: 30px;
     font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, var(--logo-clr), var(--header-clr), var(--logo-clr));
+}
+#saveList:hover,
+#saveList:focus{
+    background: white;
+    color: black;
 }
 
 .donate{
@@ -208,4 +231,10 @@ footer h3{
         align-items: center;
         margin: 0px;
     }
+    .about-us-text{
+        width: 90%;
+        text-align: start;
+        margin-bottom: 1em;
+    }
+    
 }

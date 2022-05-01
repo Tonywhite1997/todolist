@@ -24,16 +24,18 @@
         <p class="hero-text">Create a variety of list of things you would love to do with this little app. You can keep tract of your activities here whenever you need them.</p>
         <input type="text" name="item" id="item" placeholder="*your item goes here">
         <p class="note"><strong>Note: Please press "ENTER" to update your list.</strong></p>
-        <ol class="items-list">
-            <h3>Your Listed Items</h3>
+        <h3 class="items-list-header">Your Listed Items</h3>
+        <ol class="items-list" id="items-book">
+            
         </ol>
+        <button id="saveList">Save List</button>
     </main>
     <section class="donate" id="donate">
         <h3>You can donate to us</h3>
-        <form action="">
-            <input type="text" class="donation" placeholder="*your name goes here">
-            <input type="number" class="donation" placeholder="*amount to donate">
-            <input type="submit" class="donate-button" value="Donate">
+        <form action="#">
+            <input type="text" class="donation" id="donator" placeholder="*your name goes here">
+            <input type="number" class="donation" id="amount" placeholder="*amount to donate">
+            <input type="submit" class="donate-button" id="submit" value="Donate">
         </form>
     </section>
     <section class="about-us" id="about-us">
