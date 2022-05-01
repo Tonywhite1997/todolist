@@ -36,15 +36,15 @@ nav{
     align-items: center;
 }
 .logo{
+    font-family: 'Parisienne', cursive;
     margin-left: 1em;
     padding: .5em;
     height: 50px;
-    width: 50px;
     border-radius: 50%;
-    background: var(--logo-clr);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;    
 }
@@ -215,16 +215,40 @@ footer h3{
     margin-bottom: .5em;
 }
 
+@media screen and (max-width:855px){
+    .logo{
+        margin-top: 1em;
+    }
+    .navigate{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    }
+   
+    .about-us-text h3{
+        margin-bottom: 1em;
+    }
+}
+
 @media screen and (max-width: 550px){
+
+    #saveList{
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 1em;
+    }
     .about-us{
         flex-direction: column;
         align-items: center;
         /* border: 1px solid red; */
-        height: 100vh;
+        height: 90vh;
     }
+
     .logo{
         margin: 0px;
         margin-top: 1em;
+        background: none;
     }
     nav{
         flex-direction: column;
@@ -235,7 +259,9 @@ footer h3{
         justify-content: center;
         align-items: center;
         margin: 0px;
+        padding: 0px;
     }
+   
     .about-us-text{
         width: 90%;
         text-align: start;
