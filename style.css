@@ -248,7 +248,6 @@ footer h3{
     .logo{
         margin: 0px;
         margin-top: 1em;
-        background: none;
     }
     nav{
         flex-direction: column;
