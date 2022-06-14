@@ -1,0 +1,54 @@
+@import "./resets";
+@import "./header";
+@import "./main";
+
+.header{
+    margin-bottom: 0;
+}
+.main{
+    padding-top: 3em;
+    height: 80vh;
+    
+    &__form{
+        width: 50%;
+        @include flex(column);
+
+        &__input{
+            width: 100%;
+            margin-bottom: 1em;
+            height: 40px;
+            border: none;
+            border-bottom: 1px solid black;
+            border-radius: 5px;
+            font-size: 1rem;
+
+            &::placeholder{
+                padding-left: .5em;
+            }
+
+            &:focus{
+                outline-color: red;
+            }
+            
+        }
+        &__textarea{
+            @extend .main__form__input;
+            border: 1px solid black;
+            height: 150px;
+        }
+
+        &__button{
+            padding: .5em 3em;
+            font-weight: bold;
+            border: none;
+            background-color: rgba(255, 0, 0, 0.806);
+            color: white;
+            border-radius: 3px;
+            transition: background-color 500ms ease-in;
+
+            &:hover{
+                background-color: black;
+            }
+        }
+    }
+}

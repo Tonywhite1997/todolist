@@ -109,6 +109,46 @@ a:hover {
   color: rgba(255, 0, 0, 0.779);
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  height: 10vh;
+  margin-bottom: 2em;
+  background-color: #fa3232;
+}
+
+.header__title {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 1em;
+  font-size: clamp(1.2rem, 1.5rem, 2rem);
+}
+
+.header__nav {
+  margin-right: 1em;
+}
+
+.header__nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .8em;
+}
+
 .main {
   height: 100%;
   width: 100%;
@@ -195,6 +235,16 @@ a:hover {
 }
 
 .header {
+  margin-bottom: 0;
+}
+
+.main {
+  padding-top: 3em;
+  height: 80vh;
+}
+
+.main__form {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,39 +254,59 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__form__input, .main__form__textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.main__form__input::-webkit-input-placeholder, .main__form__textarea::-webkit-input-placeholder {
+  padding-left: .5em;
+}
+
+.main__form__input:-ms-input-placeholder, .main__form__textarea:-ms-input-placeholder {
+  padding-left: .5em;
+}
+
+.main__form__input::-ms-input-placeholder, .main__form__textarea::-ms-input-placeholder {
+  padding-left: .5em;
+}
+
+.main__form__input::placeholder, .main__form__textarea::placeholder {
+  padding-left: .5em;
+}
+
+.main__form__input:focus, .main__form__textarea:focus {
+  outline-color: red;
+}
+
+.main__form__textarea {
+  border: 1px solid black;
+  height: 150px;
+}
+
+.main__form__button {
+  padding: .5em 3em;
+  font-weight: bold;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.806);
   color: white;
-  height: 10vh;
-  margin-bottom: 2em;
-  background-color: #fa3232;
+  border-radius: 3px;
+  -webkit-transition: background-color 500ms ease-in;
+  transition: background-color 500ms ease-in;
 }
 
-.header__title {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-left: 1em;
-  font-size: clamp(1.2rem, 1.5rem, 2rem);
+.main__form__button:hover {
+  background-color: black;
 }
-
-.header__nav {
-  margin-right: 1em;
-}
-
-.header__nav__ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: .8em;
-}
-
-body {
-  font-family: monospace;
-  font-size: 16px;
-  height: 100vh;
-}
-/*# sourceMappingURL=general.css.map */
+/*# sourceMappingURL=contact.css.map */
