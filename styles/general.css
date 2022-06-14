@@ -47,9 +47,10 @@
 
 .main__add__input__field {
   width: 70%;
-  height: 38px;
+  height: 36.9px;
   margin-right: 0;
   border: none;
+  font-size: 1rem;
 }
 
 .main__add__input__field::-webkit-input-placeholder {
@@ -70,7 +71,7 @@
 
 .main__add__input__button {
   height: 38.3px;
-  padding: 0 .5em;
+  padding: 0 .8em;
   font-weight: bold;
   border: none;
   border-top-right-radius: 5px;
