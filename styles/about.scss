@@ -1,5 +1,6 @@
 @import "./resets";
 @import "./header";
+@import "./footer";
 
 body{
     height: 100vh;
@@ -8,7 +9,6 @@ body{
 
 .header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-bottom: 3em;
 
     .header__nav__ul a{
        font-size: 1.1rem; 
@@ -30,6 +30,7 @@ body{
         margin-bottom: .5em;
         color: rgba(255, 0, 0, 0.779);
         font-size: 1.5rem;
+        margin-top: 2em;
     }
     p{
         margin-bottom: .5em;

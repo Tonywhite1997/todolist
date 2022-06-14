@@ -25,7 +25,7 @@ a:hover {
 }
 
 .main {
-  height: 100%;
+  height: 75%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,6 +57,7 @@ a:hover {
   background-color: rgba(255, 0, 0, 0.779);
   height: 100px;
   margin-bottom: 2em;
+  margin-top: 2em;
   border-radius: 5px;
 }
 
@@ -107,6 +108,15 @@ a:hover {
 
 .main__task__lists__title {
   color: rgba(255, 0, 0, 0.779);
+}
+
+@media screen and (max-width: 600px) {
+  .main__add__input {
+    width: 100%;
+  }
+  .main__add__input__field {
+    width: 70%;
+  }
 }
 
 .header {
@@ -128,7 +138,6 @@ a:hover {
           justify-content: space-between;
   color: white;
   height: 10vh;
-  margin-bottom: 2em;
   background-color: #fa3232;
 }
 
@@ -150,7 +159,7 @@ a:hover {
 }
 
 .main {
-  height: 100%;
+  height: 75%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,6 +191,7 @@ a:hover {
   background-color: rgba(255, 0, 0, 0.779);
   height: 100px;
   margin-bottom: 2em;
+  margin-top: 2em;
   border-radius: 5px;
 }
 
@@ -234,13 +244,141 @@ a:hover {
   color: rgba(255, 0, 0, 0.779);
 }
 
+@media screen and (max-width: 600px) {
+  .main__add__input {
+    width: 100%;
+  }
+  .main__add__input__field {
+    width: 70%;
+  }
+}
+
+.main {
+  height: 75%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__add__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  background-color: rgba(255, 0, 0, 0.779);
+  height: 100px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-radius: 5px;
+}
+
+.main__add__input__field {
+  width: 75%;
+  height: 36.9px;
+  margin-right: 5px;
+  border: none;
+  font-size: 1rem;
+  outline-color: blue;
+}
+
+.main__add__input__field::-webkit-input-placeholder {
+  padding-left: .5em;
+}
+
+.main__add__input__field:-ms-input-placeholder {
+  padding-left: .5em;
+}
+
+.main__add__input__field::-ms-input-placeholder {
+  padding-left: .5em;
+}
+
+.main__add__input__field::placeholder {
+  padding-left: .5em;
+}
+
+.main__add__input__button {
+  height: 38.3px;
+  padding: 0 .9em;
+  font-weight: bold;
+  border: none;
+  background-color: #fdaaaa;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.main__add__input__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.main__task__lists {
+  width: 90%;
+}
+
+.main__task__lists__title {
+  color: rgba(255, 0, 0, 0.779);
+}
+
+@media screen and (max-width: 600px) {
+  .main__add__input {
+    width: 100%;
+  }
+  .main__add__input__field {
+    width: 70%;
+  }
+}
+
+.footer {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.938);
+}
+
+body {
+  height: 100vh;
+}
+
 .header {
   margin-bottom: 0;
 }
 
 .main {
   padding-top: 3em;
-  height: 80vh;
+  height: 75%;
 }
 
 .main__form {
