@@ -110,7 +110,7 @@ a:hover {
   color: rgba(255, 0, 0, 0.779);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .main__add__input {
     width: 100%;
   }
@@ -167,13 +167,15 @@ a:hover {
     position: relative;
   }
   .header__nav {
+    display: none;
     margin-right: 0;
     background-color: white;
-    height: 90vh;
+    height: 75vh;
     width: 100%;
     position: absolute;
     top: 10vh;
-    right: -1000px;
+    bottom: 0;
+    right: 0;
     -webkit-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
   }
@@ -192,6 +194,7 @@ a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 5em;
+    gap: 2em;
   }
   .header__nav__ul li a {
     color: red;
@@ -206,10 +209,9 @@ a:hover {
     margin-right: 2em;
     font-size: 1.5rem;
   }
-}
-
-.slide-in {
-  right: 0;
+  .slide-in {
+    display: initial;
+  }
 }
 
 .main {
@@ -298,7 +300,7 @@ a:hover {
   color: rgba(255, 0, 0, 0.779);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .main__add__input {
     width: 100%;
   }
@@ -444,7 +446,7 @@ a:hover {
   color: rgba(255, 0, 0, 0.779);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .main__add__input {
     width: 100%;
   }
@@ -539,7 +541,7 @@ a:hover {
   color: rgba(255, 0, 0, 0.779);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .main__add__input {
     width: 100%;
   }
@@ -596,13 +598,15 @@ a:hover {
     position: relative;
   }
   .header__nav {
+    display: none;
     margin-right: 0;
     background-color: white;
-    height: 90vh;
+    height: 75vh;
     width: 100%;
     position: absolute;
     top: 10vh;
-    right: -1000px;
+    bottom: 0;
+    right: 0;
     -webkit-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
   }
@@ -621,6 +625,7 @@ a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 5em;
+    gap: 2em;
   }
   .header__nav__ul li a {
     color: red;
@@ -635,10 +640,9 @@ a:hover {
     margin-right: 2em;
     font-size: 1.5rem;
   }
-}
-
-.slide-in {
-  right: 0;
+  .slide-in {
+    display: initial;
+  }
 }
 
 .main {
@@ -727,7 +731,7 @@ a:hover {
   color: rgba(255, 0, 0, 0.779);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .main__add__input {
     width: 100%;
   }
@@ -805,55 +809,8 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .header {
-    position: relative;
-  }
-  .header__nav {
-    margin-right: 0;
-    background-color: white;
-    height: 90vh;
-    width: 100%;
-    position: absolute;
-    top: 10vh;
-    right: -1000px;
-    -webkit-transition: all 500ms ease-in;
-    transition: all 500ms ease-in;
-  }
-  .header__nav__ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 5em;
-  }
-  .header__nav__ul li a {
-    color: red;
-  }
-  .header .fa-bars {
-    display: initial;
-    margin-right: 2em;
-    font-size: 1.5rem;
-  }
-  .header .fa-times {
-    display: none;
-    margin-right: 2em;
-    font-size: 1.5rem;
-  }
   .main {
     width: 80%;
   }
-}
-
-.slide-in {
-  right: 0;
 }
 /*# sourceMappingURL=about.css.map */

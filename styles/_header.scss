@@ -5,7 +5,6 @@
     justify-content: space-between;
     color: white;
     height: 10vh;
-    // margin-bottom: 2em;
     background-color: rgb(250, 50, 50);
 
     &__title{
@@ -33,18 +32,21 @@
         position: relative;
 
         &__nav{
+            display: none;
             margin-right: 0;
             background-color: white;
-            height: 90vh;
+            height: 75vh;
             width: 100%;
             position: absolute;
             top: 10vh;
-            right: -1000px;
+            bottom: 0;
+            right: 0;
             transition: all 500ms ease-in;
 
             &__ul{
                 @include flex(column);
                 margin-top: 5em;
+                gap: 2em;
             }
 
             &__ul li a{
@@ -63,9 +65,9 @@
             font-size: 1.5rem;
         }
     }
-}
-
-//classList nav bar styles
+    
+    //classList nav bar styles
 .slide-in{
-    right: 0;
+    display: initial;
+    }
 }
