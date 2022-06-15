@@ -2,6 +2,8 @@
 @import "./header";
 @import "./main";
 @import "./footer";
+@import "./general.scss";
+
 body{
     height: 100vh;
 }
@@ -13,6 +15,7 @@ body{
     height: 75%;
     
     &__form{
+        margin-top: 2em;
         width: 50%;
         @include flex(column);
 
@@ -54,4 +57,52 @@ body{
             }
         }
     }
+}
+
+@media screen and (max-width:750px){
+    .header{
+        position: relative;
+
+        &__nav{
+            margin-right: 0;
+            background-color: white;
+            height: 90vh;
+            width: 100%;
+            position: absolute;
+            top: 10vh;
+            right: -1000px;
+            transition: all 500ms ease-in;
+
+            &__ul{
+                @include flex(column);
+                margin-top: 5em;
+            }
+
+            &__ul li a{
+                color: red;
+            }
+        }
+
+        .fa-bars{
+            display: initial;
+            margin-right: 2em;
+            font-size: 1.5rem;
+        }
+        .fa-times{
+            display: none;
+            margin-right: 2em;
+            font-size: 1.5rem;
+        }
+    }
+
+    .main{
+        &__form{
+            width: 80%;
+        }
+    }
+}
+
+//classList nav bar styles
+.slide-in{
+    right: 0;
 }

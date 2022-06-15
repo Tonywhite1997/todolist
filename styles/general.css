@@ -253,6 +253,60 @@ a:hover {
   gap: .8em;
 }
 
+.header .fas {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    position: relative;
+  }
+  .header__nav {
+    margin-right: 0;
+    background-color: white;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    right: -1000px;
+    -webkit-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+  }
+  .header__nav__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 5em;
+  }
+  .header__nav__ul li a {
+    color: red;
+  }
+  .header .fa-bars {
+    display: initial;
+    margin-right: 2em;
+    font-size: 1.5rem;
+  }
+  .header .fa-times {
+    display: none;
+    margin-right: 2em;
+    font-size: 1.5rem;
+  }
+}
+
+.slide-in {
+  right: 0;
+}
+
 .main {
   height: 75%;
   width: 100%;
@@ -364,13 +418,18 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: .2em;
   color: white;
   background-color: rgba(0, 0, 0, 0.938);
 }
 
+.footer h3 {
+  color: #fe3333;
+}
+
 body {
-  font-family: monospace;
   font-size: 16px;
   height: 100vh;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=general.css.map */
