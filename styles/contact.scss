@@ -44,7 +44,7 @@ body{
         }
 
         &__button{
-            padding: .5em 3em;
+            padding: .8em 3em;
             font-weight: bold;
             border: none;
             background-color: rgba(255, 0, 0, 0.806);
@@ -58,6 +58,10 @@ body{
         }
     }
 }
+
+.footer{
+        height: 16%;
+    }
 
 @media screen and (max-width:750px){
     .main{

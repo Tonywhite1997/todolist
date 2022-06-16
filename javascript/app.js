@@ -128,9 +128,13 @@ function markComplete(index){
             completedStyle: "line-through",
             completedDate: date
         }
-        newArray.push(userTask)
-        localStorage.setItem("task", JSON.stringify(newArray))
-
+        if(confirm("This action cannot be reverted. Continue?")){
+            newArray.push(userTask)
+            localStorage.setItem("task", JSON.stringify(newArray))
+        }
+        else{
+            return
+        }
         location.reload()
     }
 }
@@ -139,7 +143,6 @@ function markComplete(index){
 const markCompleteBtns = document.querySelectorAll(".task__complete")
 
 markCompleteBtns.forEach((markCompleteBtn, index)=>{
-    
     markCompleteBtn.addEventListener("click", ()=>{
         markComplete(index)
     })
@@ -149,7 +152,7 @@ let completeMessage = document.querySelector(".main__task__lists__complete__mess
 markCompleteBtns.forEach((button, index)=>{
     let oldTasks = JSON.parse(localStorage.getItem("task")) || []
         if(oldTasks[index].completedDate !== ""){
-            button.innerText = `Completed on ${oldTasks[index].completedDate}`;
+            button.innerText = `Completed on ${oldTasks[index].completedDate}. Please Delete.`;
             button.style.backgroundColor = "green"
             
         }

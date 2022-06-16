@@ -383,7 +383,7 @@ a:hover {
 
 .footer {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 12%;
+  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,7 +408,7 @@ a:hover {
 
 .main__task__lists {
   width: 90%;
-  min-height: 30%;
+  min-height: 0;
   margin-bottom: .2em;
   overflow-y: scroll;
 }
@@ -485,16 +485,17 @@ a:hover {
   font-weight: bold;
   margin-bottom: .2em;
   background-color: rgba(0, 0, 0, 0.934);
+  border-radius: 5px;
 }
 
 .task__counter__completed {
   color: #28fd28;
-  padding-top: .1em;
+  padding-top: .8em;
 }
 
 .task__counter__uncompleted {
-  color: #f83d3d;
-  padding-bottom: .1em;
+  color: #fa4f4f;
+  padding-bottom: .8em;
 }
 
 body {
