@@ -55,9 +55,9 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 100px;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  height: 80px;
+  margin-bottom: .5em;
+  margin-top: .5em;
   border-radius: 5px;
 }
 
@@ -129,7 +129,7 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
-  height: 10vh;
+  height: 9%;
   background-color: #fa3232;
 }
 
@@ -162,7 +162,7 @@ a:hover {
     display: none;
     margin-right: 0;
     background-color: white;
-    height: 75vh;
+    height: 74vh;
     width: 100%;
     position: absolute;
     top: 10vh;
@@ -170,6 +170,7 @@ a:hover {
     right: 0;
     -webkit-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
+    z-index: 999;
   }
   .header__nav__ul {
     display: -webkit-box;
@@ -237,9 +238,9 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 100px;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  height: 80px;
+  margin-bottom: .5em;
+  margin-top: .5em;
   border-radius: 5px;
 }
 
@@ -324,9 +325,9 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 100px;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  height: 80px;
+  margin-bottom: .5em;
+  margin-top: .5em;
   border-radius: 5px;
 }
 
@@ -382,7 +383,7 @@ a:hover {
 
 .footer {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 15%;
+  height: 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,7 +397,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: .2em;
+  gap: .1em;
   color: white;
   background-color: rgba(0, 0, 0, 0.938);
 }
@@ -462,9 +463,9 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 100px;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  height: 80px;
+  margin-bottom: .5em;
+  margin-top: .5em;
   border-radius: 5px;
 }
 
@@ -549,9 +550,9 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 100px;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  height: 80px;
+  margin-bottom: .5em;
+  margin-top: .5em;
   border-radius: 5px;
 }
 
@@ -623,7 +624,7 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
-  height: 10vh;
+  height: 9%;
   background-color: #fa3232;
 }
 
@@ -656,7 +657,7 @@ a:hover {
     display: none;
     margin-right: 0;
     background-color: white;
-    height: 75vh;
+    height: 74vh;
     width: 100%;
     position: absolute;
     top: 10vh;
@@ -664,6 +665,7 @@ a:hover {
     right: 0;
     -webkit-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
+    z-index: 999;
   }
   .header__nav__ul {
     display: -webkit-box;
@@ -731,9 +733,9 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 100px;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  height: 80px;
+  margin-bottom: .5em;
+  margin-top: .5em;
   border-radius: 5px;
 }
 
@@ -789,7 +791,7 @@ a:hover {
 
 .footer {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  height: 15%;
+  height: 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,7 +805,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: .2em;
+  gap: .1em;
   color: white;
   background-color: rgba(0, 0, 0, 0.938);
 }
@@ -814,8 +816,8 @@ a:hover {
 
 .main__task__lists {
   width: 90%;
-  min-height: 40%;
-  margin-bottom: 1em;
+  min-height: 30%;
+  margin-bottom: .2em;
   overflow-y: scroll;
 }
 
@@ -830,16 +832,6 @@ a:hover {
 .main__task__lists::-webkit-scrollbar-thumb {
   background-color: orange;
   border-radius: 20px;
-}
-
-.main__task__lists__complete__message {
-  display: none;
-  margin-left: .8em;
-  background-color: green;
-  color: white;
-  font-size: 1.125rem;
-  padding: 5px 5px;
-  font-weight: bold;
 }
 
 .main__task__lists .task {
@@ -893,6 +885,24 @@ a:hover {
 
 .completed {
   background-color: green;
+}
+
+.task__counter {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: .2em;
+  background-color: rgba(0, 0, 0, 0.934);
+}
+
+.task__counter__completed {
+  color: #28fd28;
+  padding-top: .1em;
+}
+
+.task__counter__uncompleted {
+  color: #f83d3d;
+  padding-bottom: .1em;
 }
 
 body {

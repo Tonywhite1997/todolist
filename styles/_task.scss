@@ -1,8 +1,8 @@
 .main__task__lists{
     // border: 1px solid red;
     width: 90%;
-    min-height: 40%;
-    margin-bottom: 1em;
+    min-height: 30%;
+    margin-bottom: .2em;
     overflow-y: scroll;
     &::-webkit-scrollbar{
         width: 12px;
@@ -13,16 +13,6 @@
     &::-webkit-scrollbar-thumb{
         background-color: orange;
         border-radius: 20px;
-    }
-
-    &__complete__message{
-        display: none;
-        margin-left: .8em;
-        background-color: green;
-        color: white;
-        font-size: 1.125rem;
-        padding: 5px 5px;
-        font-weight: bold;
     }
 
     .task{

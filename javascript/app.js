@@ -65,7 +65,6 @@ function showTasks(){
             <button class="task__complete">Mark Complete</button>
             
             <i class="fas fa-times task__exit"></i>
-            <p class="main__task__lists__complete__message">Completed</p>
         </div>
         `
 
@@ -155,6 +154,29 @@ markCompleteBtns.forEach((button, index)=>{
             
         }
 })
+
+const taskCompleted = document.querySelector(".task__counter__completed")
+const taskUncompleted = document.querySelector(".task__counter__uncompleted")
+
+function countTasks(){
+    let completeCount = 0
+    let uncompleteCount = 0
+    let oldTasks = JSON.parse(localStorage.getItem("task")) || []
+    for(let task of oldTasks){
+        if(task.completedDate !== ""){
+            completeCount += 1
+        }
+        taskCompleted.innerText = `Completed: ${completeCount}`
+    }
+    for(let task of oldTasks){
+        if(task.completedDate === ""){
+           uncompleteCount += 1
+        }
+        taskUncompleted.innerText = `Uncompleted: ${uncompleteCount}`
+    }
+}
+
+window.addEventListener("load", countTasks)
 
 
 
