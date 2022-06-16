@@ -169,13 +169,13 @@ function countTasks(){
         if(task.completedDate !== ""){
             completeCount += 1
         }
-        taskCompleted.innerText = `Completed: ${completeCount}`
+        taskCompleted.innerText = `Completed Tasks: ${completeCount}`
     }
     for(let task of oldTasks){
         if(task.completedDate === ""){
            uncompleteCount += 1
         }
-        taskUncompleted.innerText = `Uncompleted: ${uncompleteCount}`
+        taskUncompleted.innerText = `Uncompleted Tasks: ${uncompleteCount}`
     }
 }
 
