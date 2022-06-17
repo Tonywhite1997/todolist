@@ -23,7 +23,7 @@
 
         &__field{
             width: 75%;
-            height: 36.9px;
+            height: 38.3px;
             margin-right: 5px;
             padding-left: .5em;
             border: none;
@@ -35,7 +35,7 @@
             padding: 0 .9em;
             font-weight: bold;
             border: none;
-            background-color: rgb(253, 170, 170);
+            background-color: rgb(252, 252, 252);
             transition: all 500ms ease-in-out;
             cursor: pointer;
 
@@ -45,13 +45,6 @@
             }
         }
     }
-    // &__task__lists{
-    //     width: 90%;
-
-    //     &__title{
-    //         color: rgba(255, 0, 0, 0.779)
-    //     }
-    // }
 
 }
 
