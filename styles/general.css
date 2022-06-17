@@ -55,7 +55,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -65,25 +65,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -142,7 +127,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -152,25 +137,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -325,7 +295,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -335,25 +305,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -409,6 +364,7 @@ a:hover {
 .main__task__lists {
   width: 90%;
   min-height: 0;
+  max-height: 65%;
   margin-bottom: .2em;
   overflow-y: scroll;
 }
@@ -437,13 +393,13 @@ a:hover {
 .main__task__lists .task__date {
   color: rgba(255, 0, 0, 0.868);
   margin-bottom: .3em;
-  margin-left: .5em;
+  margin-left: .8em;
   padding-top: .2em;
   font-size: .9rem;
 }
 
 .main__task__lists .task__task {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   margin-bottom: .3em;
   margin-left: .5em;

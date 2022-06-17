@@ -55,7 +55,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -65,25 +65,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -238,7 +223,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -248,25 +233,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -325,7 +295,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -335,25 +305,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -463,7 +418,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -473,25 +428,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -550,7 +490,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -560,25 +500,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -733,7 +658,7 @@ a:hover {
           flex-direction: row;
   width: 90%;
   background-color: rgba(255, 0, 0, 0.779);
-  height: 80px;
+  height: 100px;
   margin-bottom: .5em;
   margin-top: .5em;
   border-radius: 5px;
@@ -743,25 +668,10 @@ a:hover {
   width: 75%;
   height: 36.9px;
   margin-right: 5px;
+  padding-left: .5em;
   border: none;
   font-size: 1rem;
   outline-color: blue;
-}
-
-.main__add__input__field::-webkit-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field:-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::-ms-input-placeholder {
-  padding-left: .5em;
-}
-
-.main__add__input__field::placeholder {
-  padding-left: .5em;
 }
 
 .main__add__input__button {
@@ -817,6 +727,7 @@ a:hover {
 .main__task__lists {
   width: 90%;
   min-height: 0;
+  max-height: 65%;
   margin-bottom: .2em;
   overflow-y: scroll;
 }
@@ -845,13 +756,13 @@ a:hover {
 .main__task__lists .task__date {
   color: rgba(255, 0, 0, 0.868);
   margin-bottom: .3em;
-  margin-left: .5em;
+  margin-left: .8em;
   padding-top: .2em;
   font-size: .9rem;
 }
 
 .main__task__lists .task__task {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   margin-bottom: .3em;
   margin-left: .5em;
@@ -926,7 +837,9 @@ body {
 }
 
 .main__form {
-  margin-top: 2em;
+  border: 3px solid rgba(255, 0, 0, 0.678);
+  border-radius: 5px;
+  margin-top: 1em;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -944,13 +857,17 @@ body {
 }
 
 .main__form__input, .main__form__textarea {
-  width: 100%;
+  width: 90%;
   margin-bottom: 1em;
   height: 40px;
   border: none;
   border-bottom: 1px solid black;
   border-radius: 5px;
   font-size: 1rem;
+}
+
+.main__form__input:first-child, .main__form__textarea:first-child {
+  margin-top: 1em;
 }
 
 .main__form__input::-webkit-input-placeholder, .main__form__textarea::-webkit-input-placeholder {
@@ -981,6 +898,7 @@ body {
 .main__form__button {
   padding: .8em 3em;
   font-weight: bold;
+  margin-bottom: 1em;
   border: none;
   background-color: rgba(255, 0, 0, 0.806);
   color: white;

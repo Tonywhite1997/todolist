@@ -2,6 +2,7 @@
     // border: 1px solid red;
     width: 90%;
     min-height: 0;
+    max-height: 65%;
     margin-bottom: .2em;
     overflow-y: scroll;
     &::-webkit-scrollbar{
@@ -25,12 +26,12 @@
         &__date{
             color: rgba(255, 0, 0, 0.868);
             margin-bottom: .3em;
-            margin-left: .5em;
+            margin-left: .8em;
             padding-top: .2em;
             font-size: .9rem;
         }
         &__task{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             text-transform: capitalize;
             margin-bottom: .3em;
             margin-left: .5em;

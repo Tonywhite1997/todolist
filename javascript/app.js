@@ -152,7 +152,7 @@ let completeMessage = document.querySelector(".main__task__lists__complete__mess
 markCompleteBtns.forEach((button, index)=>{
     let oldTasks = JSON.parse(localStorage.getItem("task")) || []
         if(oldTasks[index].completedDate !== ""){
-            button.innerText = `Completed on ${oldTasks[index].completedDate}. Please Delete.`;
+            button.innerText = `Completed on ${oldTasks[index].completedDate}.`;
             button.style.backgroundColor = "green"
             
         }

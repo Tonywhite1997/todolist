@@ -16,7 +16,7 @@
         @include flex(row);
         width: 90%;
         background-color: rgba(255, 0, 0, 0.779);
-        height: 80px;
+        height: 100px;
         margin-bottom: .5em;
         margin-top: .5em;
         border-radius: 5px;
@@ -25,13 +25,10 @@
             width: 75%;
             height: 36.9px;
             margin-right: 5px;
+            padding-left: .5em;
             border: none;
             font-size: 1rem;
             outline-color:blue;
-
-            &::placeholder{
-                padding-left: .5em;
-            }
         }
         &__button{
             height: 38.3px;
