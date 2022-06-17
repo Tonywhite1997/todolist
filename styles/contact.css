@@ -114,7 +114,7 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
-  height: 9%;
+  height: 10%;
   background-color: #fa3232;
 }
 
@@ -549,7 +549,7 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
-  height: 9%;
+  height: 10%;
   background-color: #fa3232;
 }
 
@@ -832,7 +832,7 @@ body {
 }
 
 .main {
-  padding-top: 3em;
+  padding-top: 2em;
   height: 75%;
 }
 
@@ -902,7 +902,8 @@ body {
   border: none;
   background-color: rgba(255, 0, 0, 0.806);
   color: white;
-  border-radius: 3px;
+  border-radius: 100vmax;
+  margin-bottom: 2em;
   -webkit-transition: background-color 500ms ease-in;
   transition: background-color 500ms ease-in;
 }
@@ -912,7 +913,8 @@ body {
 }
 
 .footer {
-  height: 16%;
+  height: 15%;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 750px) {
