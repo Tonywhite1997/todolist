@@ -15,9 +15,9 @@ body{
     height: 75%;
     
     &__form{
-        border: 3px solid rgba(255, 0, 0, 0.678);
         border-radius: 5px;
         margin-top: 1em;
+        margin-bottom: 1em;
         width: 50%;
         @include flex(column);
 

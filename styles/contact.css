@@ -68,7 +68,7 @@ a:hover {
   padding-left: .5em;
   border: none;
   font-size: 1rem;
-  outline-color: blue;
+  outline-color: none;
 }
 
 .main__add__input__button {
@@ -236,7 +236,7 @@ a:hover {
   padding-left: .5em;
   border: none;
   font-size: 1rem;
-  outline-color: blue;
+  outline-color: none;
 }
 
 .main__add__input__button {
@@ -308,7 +308,7 @@ a:hover {
   padding-left: .5em;
   border: none;
   font-size: 1rem;
-  outline-color: blue;
+  outline-color: none;
 }
 
 .main__add__input__button {
@@ -431,7 +431,7 @@ a:hover {
   padding-left: .5em;
   border: none;
   font-size: 1rem;
-  outline-color: blue;
+  outline-color: none;
 }
 
 .main__add__input__button {
@@ -503,7 +503,7 @@ a:hover {
   padding-left: .5em;
   border: none;
   font-size: 1rem;
-  outline-color: blue;
+  outline-color: none;
 }
 
 .main__add__input__button {
@@ -671,7 +671,7 @@ a:hover {
   padding-left: .5em;
   border: none;
   font-size: 1rem;
-  outline-color: blue;
+  outline-color: none;
 }
 
 .main__add__input__button {
@@ -727,7 +727,7 @@ a:hover {
 .main__task__lists {
   width: 90%;
   min-height: 0;
-  max-height: 65%;
+  max-height: 70%;
   margin-bottom: .2em;
   overflow-y: scroll;
 }
@@ -837,9 +837,9 @@ body {
 }
 
 .main__form {
-  border: 3px solid rgba(255, 0, 0, 0.678);
   border-radius: 5px;
   margin-top: 1em;
+  margin-bottom: 1em;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
