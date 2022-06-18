@@ -898,6 +898,7 @@ body {
 .main__form__textarea {
   border: 1px solid black;
   height: 150px;
+  padding-top: .5em;
 }
 
 .main__form__button {

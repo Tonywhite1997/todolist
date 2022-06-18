@@ -50,6 +50,7 @@ body{
             @extend .main__form__input;
             border: 1px solid black;
             height: 150px;
+            padding-top: .5em;
         }
 
         &__button{
