@@ -107,6 +107,7 @@ deleteBtns.forEach((deleteBtn, index)=>{
 
 //writing a function to mark a task as complete
 const tasks = document.querySelectorAll(".task__task")
+
 function markComplete(index){
     let oldTasks = JSON.parse(localStorage.getItem("task")) || []
     let matched = oldTasks.find((data, i)=>{
@@ -129,7 +130,7 @@ function markComplete(index){
             completedDate: date
         }
         if(confirm("This action cannot be reverted. Continue?")){
-            newArray.push(userTask)
+            newArray.splice(index, 0, userTask)
             localStorage.setItem("task", JSON.stringify(newArray))
         }
         else{
