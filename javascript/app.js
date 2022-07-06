@@ -197,7 +197,8 @@ markCompleteBtns.forEach((button, index)=>{
     let oldTasks = JSON.parse(localStorage.getItem("task")) || []
         if(oldTasks[index].completedDate !== ""){
             button.innerText = `Completed on ${oldTasks[index].completedDate}.`;
-            button.style.backgroundColor = "green"
+            button.style.backgroundColor = "green";
+            editButtons[index].style.display="none";
             
         }
 })
