@@ -226,8 +226,12 @@ function countTasks(){
 window.addEventListener("load", countTasks)
 
 inputField.addEventListener("keypress", (e)=>{
-    if(e.code === "Enter"){
+    if(e.code === "Enter" && addBtn.style.display !== "none"){
         saveUserTasks()
+    }
+    
+    if(e.code === "Enter" && updateBtn.style.display !== "none"){
+        updateSelectedTask(selectedTaskIndex)
     }
 })
 
