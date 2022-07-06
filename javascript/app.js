@@ -21,6 +21,7 @@ slideOutBtn.addEventListener("click", ()=>{
 const inputField = document.querySelector(".main .main__add__input__field")
 const taskList = document.querySelector(".main .main__task__lists")
 const addBtn = document.querySelector(".main .main__add__input__button")
+const updateBtn = document.querySelector(".main .main__add__input__update")
 
 //saving user task to local storage
 
@@ -63,7 +64,7 @@ function showTasks(){
             <p class="task__date">Created on:${task.date}</p>
             <p class="task__task" style="text-decoration:${task.completedStyle}">${task.task}</p>
             <button class="task__complete">Mark Complete</button>
-            
+            <i class="fas fa-edit task__update"></i>
             <i class="fas fa-times task__exit"></i>
         </div>
         `
@@ -93,8 +94,50 @@ function deleteTask(index){
     }
 }
 
+//when user wants to edit a task. this stores the index of the task.
+let selectedTaskIndex;
+
+let oldTasks = JSON.parse(localStorage.getItem("task")) || []
+
+function returnTaskBackToInputField(index){
+    for(i=0; i<oldTasks.length; i++){
+        if(index === i){
+            selectedTaskIndex = i
+            inputField.focus();
+            inputField.value = oldTasks[i].task;
+            addBtn.style.display = "none"
+            updateBtn.style.display = "initial"
+        }
+    }
+}
+
+const editButtons = document.querySelectorAll(".main__task__lists .task__update")
+
+editButtons.forEach((editButton, btnIndex)=>{
+    editButton.addEventListener("click", ()=>{
+        returnTaskBackToInputField(btnIndex)
+    })
+})
+
+function updateSelectedTask(index){
+    let matched = oldTasks.find((task, taskIndex)=>{
+        if(index === taskIndex){
+            return task;
+        }
+    })
+    matched.task = inputField.value;
+    localStorage.setItem("task", JSON.stringify(oldTasks))
+    location.reload()
+
+}
+
 //adding event listener to add task button
 addBtn.addEventListener("click", saveUserTasks)
+
+//adding event listener to update task button
+updateBtn.addEventListener("click", ()=>{
+    updateSelectedTask(selectedTaskIndex)
+})
 
 //adding eveent listener to delete button 
 const deleteBtns = document.querySelectorAll(".main__task__lists .task__exit")

@@ -73,6 +73,7 @@ a:hover {
 
 .main__add__input__button {
   height: 38.3px;
+  width: 100px;
   padding: 0 .9em;
   font-weight: bold;
   border: none;
@@ -83,6 +84,24 @@ a:hover {
 }
 
 .main__add__input__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.main__add__input__update {
+  display: none;
+  height: 38.3px;
+  width: 100px;
+  padding: 0 .9em;
+  font-weight: bold;
+  border: none;
+  background-color: #fcfcfc;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.main__add__input__update:hover {
   background-color: black;
   color: white;
 }
@@ -145,6 +164,7 @@ a:hover {
 
 .main__add__input__button {
   height: 38.3px;
+  width: 100px;
   padding: 0 .9em;
   font-weight: bold;
   border: none;
@@ -155,6 +175,24 @@ a:hover {
 }
 
 .main__add__input__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.main__add__input__update {
+  display: none;
+  height: 38.3px;
+  width: 100px;
+  padding: 0 .9em;
+  font-weight: bold;
+  border: none;
+  background-color: #fcfcfc;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.main__add__input__update:hover {
   background-color: black;
   color: white;
 }
@@ -313,6 +351,7 @@ a:hover {
 
 .main__add__input__button {
   height: 38.3px;
+  width: 100px;
   padding: 0 .9em;
   font-weight: bold;
   border: none;
@@ -323,6 +362,24 @@ a:hover {
 }
 
 .main__add__input__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.main__add__input__update {
+  display: none;
+  height: 38.3px;
+  width: 100px;
+  padding: 0 .9em;
+  font-weight: bold;
+  border: none;
+  background-color: #fcfcfc;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.main__add__input__update:hover {
   background-color: black;
   color: white;
 }
@@ -428,9 +485,17 @@ a:hover {
 .main__task__lists .task__exit {
   position: absolute;
   color: rgba(255, 0, 0, 0.68);
-  top: 10px;
+  top: 4px;
   font-size: 1.2rem;
   right: 10px;
+}
+
+.main__task__lists .task__update {
+  position: absolute;
+  color: rgba(255, 0, 0, 0.68);
+  top: 4px;
+  font-size: 1rem;
+  right: 40px;
 }
 
 .completed {
